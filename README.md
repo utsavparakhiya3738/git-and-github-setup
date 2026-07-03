@@ -1,28 +1,23 @@
-# git-and-github-setup For All Laptop and Desktop
-1. Install git --> https://git-scm.com/install/windows<br>
-2. Add Your Config into Git <br>
-3. Open Git Bash Into Computer <br>
-4. Paste Below CMD: <br>
-git config --global --unset user.name <br>
-git config -global --unset user.email <br>
-git config --global user.name "utsavparakhiya3738" <br>
-git config --global user.email "utsavparakhiya3738@gmail.com" <br>
-5.check your git config (paste below cmd into gitbash) <br>
-git config --list <br>
-6. Check your email and username in given output <br>
-7. create a project folder into computer (ex. News-Website)<br>
-8. join your folder with github <br>
-9. go to github website (login first)<br>
-10. create a new repo (check for new btn into dashboard - green color btn)<br>
-11. give a name to repo (ex. news-website)<br>
-12. Click botton --> create a Repo (green botton)<br>
-13. find the link that start with --> git remote add origin --> Copy that whole line<br>
-14. open your vs code --> open terminal (check the menu click the option terminal --> new terminal) --> first check last words (ex. /News-Website>)<br>
-15. paste the copy link(repo link) --> close the terminal<br>
-16. create files, edit files, delete files into your folder<br>
-17. open terminal and give below cmd one by one:
-git add .
-git commit -m "give a msg"
-git push origin main (main --> branch name {check your working brach first and after tha t write the branch name})<br>
-18. repeat the cycle
-edit files --> git add . --> git commit -m "give a msg" --> git push origin main --> edit files<br>
+# Git & GitHub Setup Guide
+
+A complete, step-by-step guide to configuring Git on your machine, connecting your projects to GitHub, and managing your daily development workflow.
+
+---
+
+## 1. First-Time Git Setup
+Perform these steps **once** on any new computer to install and configure your global Git settings.
+
+### Step A: Install Git
+* Download and install Git for your operating system: [Download Git for Windows](https://git-scm.com/install/windows)
+
+### Step B: Configure Your Identity
+Open **Git Bash** (or your preferred terminal) and run the following commands to clear any old configurations and set up your active GitHub account:
+
+```bash
+# Clear existing configurations (Optional)
+git config --global --unset user.name
+git config --global --unset user.email
+
+# Set your GitHub identity
+git config --global user.name "utsavparakhiya3738"
+git config --global user.email "utsavparakhiya3738@gmail.com"
